@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía: 7 Errores que Debes Evitar en tu Mudanza | MudIT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #004C97;
+      --orange: #FF7A00;
+      --gray: #666;
+      --light: #F7F7F7;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: white;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 3px solid var(--orange);
+    }
+    
+    .logo-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .logo {
+      width: 60px;
+      height: 60px;
+      background: var(--blue);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    
+    h1 {
+      color: var(--blue);
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    
+    .subtitle {
+      color: var(--gray);
+      font-size: 1.1rem;
+    }
+    
+    .intro {
+      background: linear-gradient(135deg, var(--blue), #0060A6);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+    
+    .intro h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+    
+    .intro p {
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+    
+    .error-section {
+      margin-bottom: 40px;
+      padding: 30px;
+      background: var(--light);
+      border-radius: 12px;
+      border-left: 5px solid var(--orange);
+    }
+    
+    .error-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .error-number {
+      background: var(--orange);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    
+    .error-icon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    
+    .error-title {
+      flex: 1;
+    }
+    
+    .error-title h3 {
+      color: var(--blue);
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    
+    .error-subtitle {
+      color: var(--orange);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .error-content h4 {
+      color: var(--blue);
+      margin: 20px 0 10px 0;
+      font-size: 1.1rem;
+    }
+    
+    .error-content p,
+    .error-content ul {
+      margin-bottom: 15px;
+      color: #444;
+    }
+    
+    .error-content ul {
+      padding-left: 25px;
+    }
+    
+    .error-content li {
+      margin-bottom: 8px;
+    }
+    
+    .tip-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      border: 2px solid var(--blue);
+    }
+    
+    .tip-box h4 {
+      color: var(--blue);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .checklist {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    
+    .checklist h3 {
+      color: var(--blue);
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+    
+    .checklist-items {
+      display: grid;
+      gap: 12px;
+    }
+    
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px;
+      background: var(--light);
+      border-radius: 6px;
+    }
+    
+    .checkbox {
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--blue);
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    
+    .cta-section {
+      background: linear-gradient(135deg, var(--orange), #e66d00);
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .cta-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    
+    .cta-section p {
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+    
+    .cta-button {
+      background: white;
+      color: var(--orange);
+      padding: 15px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid var(--light);
+      color: var(--gray);
+    }
+    
+    .footer p {
+      margin-bottom: 10px;
+    }
+    
+    .footer a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media print {
+      body {
+        padding: 20px;
+      }
+      .cta-section {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      .error-section {
+        padding: 20px;
+      }
+      
+      .error-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo-section">
+      <div class="logo">M</div>
+      <div>
+        <h1>7 Errores que Debes Evitar en tu Mudanza</h1>
+        <p class="subtitle">Guía práctica de MudIT para una mudanza sin estrés</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <h2>¿Por qué esta guía cambiará tu próxima mudanza?</h2>
+    <p>
+      Mudarse es uno de los eventos más estresantes de la vida. Según estudios, el 38% de las personas consideran que la mudanza es más estresante que una ruptura amorosa. Pero no tiene por qué ser así.
+    </p>
+    <p style="margin-top: 15px;">
+      En MudIT hemos analizado más de 500 mudanzas y entrevistado a cientos de clientes. Esta guía recopila los 7 errores más comunes que transforman una mudanza simple en una pesadilla, y lo más importante: <strong>cómo evitarlos</strong>.
+    </p>
+  </div>
+
+  <!-- Error 1 -->
+  <div class="error-section">
+    <div class="error-header">
+      <div class="error-number">1</div>
+      <div class="error-title">
+        <div class="error-icon">📅</div>
+        <h3>Dejar todo para el último momento</h3>
+        <p class="error-subtitle">El error más común y más costoso</p>
+      </div>
+    </div>
+    
+    <div class="error-content">
+      <h4>❌ El problema:</h4>
+      <p>
+        El 67% de las personas subestiman el tiempo necesario para una mudanza. Muchos creen que pueden organizarlo todo en un fin de semana, pero la realidad es muy diferente. Esto resulta en:
+      </p>
+      <ul>
+        <li>Estrés extremo de última hora</li>
+        <li>Objetos mal empaquetados que se rompen</li>
+        <li>Olvidos importantes (documentos, llaves, medicamentos)</li>
+        <li>No conseguir la empresa de mudanzas que querías</li>
+        <li>Pagar precios más altos por urgencia</li>
+      </ul>
+
+      <h4>✅ La solución:</h4>
+      <p><strong>Comienza a planificar con 4-6 semanas de anticipación.</strong> Este es el timeline ideal:</p>
+      <ul>
+        <li><strong>6 semanas antes:</strong> Haz inventario, decide qué conservar y qué desechar</li>
+        <li><strong>4 semanas antes:</strong> Contrata empresa de mudanza, compra materiales de embalaje</li>
+        <li><strong>3 semanas antes:</strong> Empieza a empacar lo que menos usas (decoración, libros, ropa de temporada)</li>
+        <li><strong>2 semanas antes:</strong> Notifica cambio de dirección, gestiona servicios (luz, gas, internet)</li>
+        <li><strong>1 semana antes:</strong> Empaca casi todo, deja solo lo esencial</li>
+        <li><strong>1-2 días antes:</strong> Prepara kit de supervivencia para los primeros días</li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>💡 Tip de MudIT:</h4>
+        <p>En temporada alta (mayo-septiembre), las mejores empresas se reservan con 6-8 semanas de anticipación. ¡No esperes!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error 2 -->
+  <div class="error-section">
+    <div class="error-header">
+      <div class="error-number">2</div>
+      <div class="error-title">
+        <div class="error-icon">📦</div>
+        <h3>No etiquetar las cajas correctamente</h3>
+        <p class="error-subtitle">Te ahorras 2 minutos, pierdes 2 horas</p>
+      </div>
+    </div>
+    
+    <div class="error-content">
+      <h4>❌ El problema:</h4>
+      <p>
+        Las cajas sin etiquetar son un caos garantizado. Llegar a tu nueva casa y no saber dónde está el abrelatas, las sábanas o los cargadores del celular puede arruinar tu primer día.
+      </p>
+
+      <h4>✅ La solución:</h4>
+      <p><strong>Sistema de etiquetado de tres niveles:</strong></p>
+      <ul>
+        <li><strong>Nivel 1 - Habitación:</strong> COCINA, DORMITORIO, BAÑO (usa marcador grueso)</li>
+        <li><strong>Nivel 2 - Contenido:</strong> "Ollas y sartenes", "Ropa de verano", "Toallas"</li>
+        <li><strong>Nivel 3 - Prioridad:</strong> Marca con color las cajas urgentes
+          <ul style="margin-top: 10px;">
+            <li>🔴 ROJO: Abrir el primer día (esenciales)</li>
+            <li>🟡 AMARILLO: Abrir en la primera semana</li>
+            <li>🟢 VERDE: Puede esperar</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>💡 Tip de MudIT:</h4>
+        <p>Toma fotos del contenido antes de cerrar cada caja. Guárdalas en una carpeta de tu celular con el número de la caja. Te ahorrará horas de búsqueda.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error 3 -->
+  <div class="error-section">
+    <div class="error-header">
+      <div class="error-number">3</div>
+      <div class="error-title">
+        <div class="error-icon">💰</div>
+        <h3>Elegir la opción más barata sin investigar</h3>
+        <p class="error-subtitle">Lo barato sale caro (literalmente)</p>
+      </div>
+    </div>
+    
+    <div class="error-content">
+      <h4>❌ El problema:</h4>
+      <p>
+        Contratar al primer fletero que encontraste en Facebook o elegir la empresa más barata sin referencias puede resultar en:
+      </p>
+      <ul>
+        <li>Muebles rotos o dañados sin compensación</li>
+        <li>Cobros extras "sorpresa" al final</li>
+        <li>Retrasos de horas o incluso días</li>
+        <li>Pérdida de objetos sin seguro</li>
+        <li>En el peor caso: estafas y desapariciones</li>
+      </ul>
+
+      <h4>✅ La solución:</h4>
+      <p><strong>Checklist para elegir proveedor confiable:</strong></p>
+      <ul>
+        <li>✅ Verificar CUIT/CUIL registrado legalmente</li>
+        <li>✅ Leer mínimo 10 reseñas reales de otros clientes</li>
+        <li>✅ Confirmar que tenga seguro de responsabilidad civil</li>
+        <li>✅ Solicitar presupuesto detallado por escrito</li>
+        <li>✅ Preguntar sobre costos adicionales (escaleras, distancia, horas extra)</li>
+        <li>✅ Verificar antigüedad: mínimo 2 años en el mercado</li>
+        <li>✅ Comparar al menos 3 opciones diferentes</li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>💡 Tip de MudIT:</h4>
+        <p>En MudIT, todos los proveedores están verificados con CUIT y antecedentes. Además, retenemos el pago hasta que confirmes que todo llegó bien. Conocé más en mudit.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error 4 -->
+  <div class="error-section">
+    <div class="error-header">
+      <div class="error-number">4</div>
+      <div class="error-title">
+        <div class="error-icon">🧳</div>
+        <h3>Querer mudarlo TODO (incluso lo que no usas)</h3>
+        <p class="error-subtitle">Pagar por trasladar basura</p>
+      </div>
+    </div>
+    
+    <div class="error-content">
+      <h4>❌ El problema:</h4>
+      <p>
+        El 45% de las cosas que mudamos no las hemos usado en más de un año. Mudar objetos innecesarios significa:
+      </p>
+      <ul>
+        <li>Pagar más por mayor volumen/peso</li>
+        <li>Más tiempo empacando y desempacando</li>
+        <li>Menos espacio en la nueva casa</li>
+        <li>Perpetuar el desorden</li>
+      </ul>
+
+      <h4>✅ La solución:</h4>
+      <p><strong>Método de selección inteligente:</strong></p>
+      
+      <p style="margin-top: 15px;"><strong>Regla de oro:</strong> Si no lo usaste en 1 año, no lo lleves.</p>
+      
+      <p style="margin-top: 15px;"><strong>Tres categorías:</strong></p>
+      <ul>
+        <li><strong>LLEVAR:</strong> Lo uso regularmente y tiene valor sentimental/funcional</li>
+        <li><strong>VENDER:</strong> Buen estado pero no lo uso (Marketplace, Mercado Libre)</li>
+        <li><strong>DONAR/TIRAR:</strong> No sirve o está en mal estado</li>
+      </ul>
+
+      <p style="margin-top: 15px;"><strong>Zonas críticas para revisar:</strong></p>
+      <ul>
+        <li>Ropa que no usaste en 2 años (80% no volverás a usar)</li>
+        <li>Libros que no releerás</li>
+        <li>Electrodomésticos rotos "para arreglar algún día"</li>
+        <li>Decoración que no te gusta pero guardas "por las dudas"</li>
+        <li>Papeles y documentos viejos (digitalizá lo importante)</li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>💡 Tip de MudIT:</h4>
+        <p>Por cada 10% de cosas que elimines, reducirás aproximadamente 8-10% el costo de tu mudanza. ¡Vale la pena!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error 5 -->
+  <div class="error-section">
+    <div class="error-header">
+      <div class="error-number">5</div>
+      <div class="error-title">
+        <div class="error-icon">📋</div>
+        <h3>No hacer inventario de tus pertenencias</h3>
+        <p class="error-subtitle">¿Qué falta? No lo sabrás nunca</p>
+      </div>
+    </div>
+    
+    <div class="error-content">
+      <h4>❌ El problema:</h4>
+      <p>
+        Sin un registro claro, es imposible saber si algo se perdió o rompió durante la mudanza. Y si algo vale la pena reclamar al seguro, no tendrás pruebas.
+      </p>
+
+      <h4>✅ La solución:</h4>
+      <p><strong>Inventario digital simple en 3 pasos:</strong></p>
+      
+      <p style="margin-top: 15px;"><strong>Paso 1 - Fotografía:</strong></p>
+      <ul>
+        <li>Toma fotos generales de cada habitación</li>
+        <li>Fotos específicas de objetos valiosos (TV, PC, muebles antiguos)</li>
+        <li>Documenta el estado ANTES de empacar</li>
+      </ul>
+
+      <p style="margin-top: 15px;"><strong>Paso 2 - Planilla simple:</strong></p>
+      <ul>
+        <li>Crea un Google Sheets o Excel básico</li>
+        <li>Columnas: Nº Caja | Habitación | Contenido | Valor aprox | Foto</li>
+        <li>No necesita ser perfecto, solo útil</li>
+      </ul>
+
+      <p style="margin-top: 15px;"><strong>Paso 3 - Objetos de alto valor:</strong></p>
+      <ul>
+        <li>Lista especial con números de serie (electrónicos)</li>
+        <li>Fotos desde varios ángulos</li>
+        <li>Guarda facturas de compra si las tienes</li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>💡 Tip de MudIT:</h4>
+        <p>Apps recomendadas para inventario: Google Keep (gratis), Sortly (visual), o simplemente la app de Notas de tu celular. Lo importante es hacerlo, no que sea perfecto.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error 6 -->
+  <div class="error-section">
+    <div class="error-header">
+      <div class="error-number">6</div>
+      <div class="error-title">
+        <div class="error-icon">🚨</div>
+        <h3>Olvidar gestionar servicios y trámites</h3>
+        <p class="error-subtitle">Llegar sin luz, gas ni internet</p>
+      </div>
+    </div>
+    
+    <div class="error-content">
+      <h4>❌ El problema:</h4>
+      <p>
+        Llegar a tu nueva casa y descubrir que no hay luz, agua caliente o internet es un clásico. Los trámites de servicios pueden demorar semanas si no los anticipás.
+      </p>
+
+      <h4>✅ La solución:</h4>
+      <p><strong>Checklist de gestiones (con tiempos):</strong></p>
+      
+      <p style="margin-top: 15px;"><strong>4 semanas antes:</strong></p>
+      <ul>
+        <li>📱 Internet y cable (demora promedio: 15-20 días)</li>
+        <li>💡 Luz (solicitar alta/cambio de titular)</li>
+        <li>💧 Agua (verificar que esté activo)</li>
+        <li>🔥 Gas (puede demorar 30 días si requiere habilitación)</li>
+      </ul>
+
+      <p style="margin-top: 15px;"><strong>2 semanas antes:</strong></p>
+      <ul>
+        <li>📬 Correo (redirección temporal)</li>
+        <li>🏦 Bancos y tarjetas (cambio de domicilio)</li>
+        <li>🏥 Obras sociales y prepagas</li>
+        <li>🚗 Registro automotor (actualización de domicilio)</li>
+      </ul>
+
+      <p style="margin-top: 15px;"><strong>1 semana antes:</strong></p>
+      <ul>
+        <li>📄 DNI (cambio de domicilio en RENAPER)</li>
+        <li>🎓 Colegios (si tenés hijos)</li>
+        <li>🐕 Veterinario (actualizar cartilla de mascotas)</li>
+      </ul>
+
+      <p style="margin-top: 15px;"><strong>Día de la mudanza:</strong></p>
+      <ul>
+        <li>❄️ Descongelar heladera (mínimo 24hs antes)</li>
+        <li>🔌 Desconectar todos los electrodomésticos</li>
+        <li>📝 Hacer lectura final de medidores (foto como respaldo)</li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>💡 Tip de MudIT:</h4>
+        <p>Descarga el template de "Checklist de gestiones" desde mudit.com/recursos - Ya tiene todos los contactos y plazos organizados.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error 7 -->
+  <div class="error-section">
+    <div class="error-header">
+      <div class="error-number">7</div>
+      <div class="error-title">
+        <div class="error-icon">📦</div>
+        <h3>Empacar mal los objetos frágiles</h3>
+        <p class="error-subtitle">Tu vajilla favorita hecha añicos</p>
+      </div>
+    </div>
+    
+    <div class="error-content">
+      <h4>❌ El problema:</h4>
+      <p>
+        El 23% de los daños en mudanzas ocurren por empaquetado inadecuado. Usar solo papel de diario o no dejar espacio suficiente resulta en roturas costosas.
+      </p>
+
+      <h4>✅ La solución:</h4>
+      <p><strong>Guía de empaquetado profesional:</strong></p>
+      
+      <p style="margin-top: 15px;"><strong>Materiales esenciales:</strong></p>
+      <ul>
+        <li>🫧 Papel burbuja (para platos, vasos, electrónicos)</li>
+        <li>📰 Papel (diario sirve pero NO para vidrio)</li>
+        <li>📦 Cajas reforzadas (doble corrugado para objetos pesados)</li>
+        <li>🎗️ Cinta de embalar (NO cinta común)</li>
+        <li>✏️ Marcadores permanentes gruesos</li>
+        <li>🛡️ Protectores de esquinas (para cuadros y espejos)</li>
+      </ul>
+
+      <p style="margin-top: 15px;"><strong>Técnicas por objeto:</strong></p>
+      
+      <p><strong>VAJILLA Y CRISTALERÍA:</strong></p>
+      <ul>
+        <li>Envuelve CADA pieza individualmente con papel burbuja</li>
+        <li>Coloca vertical (como si estuvieran en un estante)</li>
+        <li>Rellena espacios vacíos con papel o toallas</li>
+        <li>NUNCA sobrecargar la caja (máximo 10kg)</li>
+        <li>Marca: "FRÁGIL - ARRIBA" en todos los lados</li>
+      </ul>
+
+      <p><strong>ELECTRÓNICOS:</strong></p>
+      <ul>
+        <li>Guarda en caja original si la tenés</li>
+        <li>Si no: papel burbuja + caja con relleno</li>
+        <li>Fotografía las conexiones antes de desenchufar</li>
+        <li>Guarda cables en bolsitas etiquetadas</li>
+      </ul>
+
+      <p><strong>CUADROS Y ESPEJOS:</strong></p>
+      <ul>
+        <li>Cinta adhesiva en X sobre el vidrio (si se rompe, no se desparrama)</li>
+        <li>Protectores de esquinas</li>
+        <li>Cartón o planchas de telgopor entre piezas</li>
+        <li>Transportar VERTICAL, nunca horizontal</li>
+      </ul>
+
+      <p><strong>LIBROS:</strong></p>
+      <ul>
+        <li>Cajas PEQUEÑAS (los libros pesan mucho)</li>
+        <li>Llenar solo hasta la mitad o 2/3 de la caja</li>
+        <li>Complementar con ropa liviana si es necesario</li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>💡 Tip de MudIT:</h4>
+        <p>Regla de oro: Si no podés levantar fácilmente una caja, está muy pesada. Redistribuí el contenido. Las lesiones de espalda son el accidente más común en mudanzas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checklist descargable -->
+  <div class="checklist">
+    <h3>📋 Checklist: Tu mudanza en 30 días</h3>
+    <p style="margin-bottom: 20px; color: var(--gray);">Imprimí o guardá esta lista para no olvidar nada importante</p>
+    
+    <div class="checklist-items">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <span><strong>Día 1-7:</strong> Hacer inventario, decidir qué conservar, solicitar presupuestos</span>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <span><strong>Día 8-14:</strong> Contratar empresa verificada, comprar materiales de embalaje</span>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <span><strong>Día 15-21:</strong> Empacar lo que menos usas, gestionar servicios (internet, luz, gas)</span>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <span><strong>Día 22-25:</strong> Notificar cambio de domicilio (bancos, trabajo, colegios)</span>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <span><strong>Día 26-28:</strong> Empacar todo menos esenciales, etiquetar cajas</span>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <span><strong>Día 29:</strong> Armar kit de supervivencia
