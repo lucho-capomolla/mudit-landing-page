@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MudIT | Mudanzas seguras y rápidas</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="nav-logo">
+        <a href="#home">
+          <img src="./logo.png" alt="MudIT Logo" class="logo">
+        </a>
+        <div>
+          <h1>MudIT</h1>
+          <span>Confianza que te acompaña</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#benefits">Beneficios</a>
+        <a href="#how">Cómo funciona</a>
+        <a href="#providers">Proveedores</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#cta" class="btn-orange">Cotizá ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero" aria-label="Hero - MudIT">
+    <div class="overlay">
+      <div class="hero-content container">
+        <h2>Mudarte nunca fue tan fácil y seguro</h2>
+        <p class="lead">Conectamos personas con proveedores verificados de mudanza y almacenamiento. Transparencia total, pagos protegidos y seguimiento en tiempo real.</p>
+
+        <div class="hero-buttons">
+          <a href="#lead-generator" class="btn-orange large">Necesito una mudanza</a>
+          <a href="#" class="btn-outline large" onclick="openProviderModal(); return false;">Soy proveedor</a>
+        </div>
+
+        <div class="hero-trust">
+          <span class="trust-item">⭐ +500 mudanzas realizadas</span>
+          <span class="trust-item">📍 Cobertura AMBA</span>
+          <span class="trust-item">🔒 Pago protegido</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LO QUE ESTÁ EN JUEGO -->
+  <section class="stakes-section">
+    <div class="container">
+      <h3>¿Cansado de estos problemas en las mudanzas?</h3>
+      <p class="section-subtext" style="color: rgba(255,255,255,0.9);">Sin MudIT, enfrentás riesgos innecesarios que pueden arruinar tu experiencia</p>
+      
+      <div class="stakes-grid">
+        <div class="stake-card">
+          <div class="stake-icon">😰</div>
+          <h4>Inseguridad total</h4>
+          <p>No sabés quién viene a tu casa ni si es confiable</p>
+        </div>
+        
+        <div class="stake-card">
+          <div class="stake-icon">💸</div>
+          <h4>Precios ocultos</h4>
+          <p>Costos que aparecen al final y explotan tu presupuesto</p>
+        </div>
+        
+        <div class="stake-card">
+          <div class="stake-icon">⏰</div>
+          <h4>Pérdida de tiempo</h4>
+          <p>Horas buscando, comparando y llamando sin resultados</p>
+        </div>
+        
+        <div class="stake-card">
+          <div class="stake-icon">📦</div>
+          <h4>Cosas rotas o perdidas</h4>
+          <p>Sin seguro ni responsables cuando algo sale mal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="section bg-white">
+    <div class="container">
+      <h3>¿Por qué elegir MudIT?</h3>
+      <p class="section-subtext">Evitate sorpresas: con MudIT sabés cuánto cuesta y quién te muda, antes de empezar.</p>
+
+      <div class="benefits">
+        <div class="benefit-card">
+          <div class="benefit-emoji">🔒</div>
+          <h4>Pagos protegidos</h4>
+          <p>Retenemos el pago hasta la confirmación de la entrega. Tu dinero está seguro.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-emoji">✅</div>
+          <h4>Proveedores verificados</h4>
+          <p>Control de CUIT/CUIL, antecedentes y reputación para mayor confianza.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-emoji">📱</div>
+          <h4>Tecnología 3D</h4>
+          <p>Estimaciones precisas con fotos o planos usando IA avanzada.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-emoji">💬</div>
+          <h4>Atención personalizada</h4>
+          <p>Soporte especializado durante toda la mudanza, de principio a fin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (EL PLAN) -->
+  <section id="how" class="section">
+    <div class="container">
+      <h3>Cómo funciona</h3>
+      <p class="section-subtext">Tres pasos sencillos para una mudanza sin estrés.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <div class="icon">📸</div>
+          <h4>Subí tus datos</h4>
+          <p>Ingresá origen, destino y fotos. Nuestra IA calcula el volumen y te da una estimación precisa en minutos.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <div class="icon">📦</div>
+          <h4>Compará presupuestos</h4>
+          <p>Recibí ofertas de proveedores verificados con CUIT validado. Elegí según precio, calificación y disponibilidad.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <div class="icon">💳</div>
+          <h4>Pagá seguro y seguí</h4>
+          <p>Pago protegido que se libera tras tu confirmación. Seguimiento en tiempo real hasta la entrega completa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET DATA -->
+  <section class="market-section">
+    <div class="container">
+      <h3>Un mercado en crecimiento</h3>
+      <p class="section-subtext" style="color: rgba(255,255,255,0.9);">El sector de mudanzas y almacenamiento está en plena transformación digital</p>
+      
+      <div class="market-stats">
+        <div class="market-stat">
+          <div class="market-stat-number">350K</div>
+          <div class="market-stat-label">Mudanzas anuales en AMBA</div>
+        </div>
+        
+        <div class="market-stat">
+          <div class="market-stat-number">USD 205M</div>
+          <div class="market-stat-label">Tamaño del mercado</div>
+        </div>
+        
+        <div class="market-stat">
+          <div class="market-stat-number">190</div>
+          <div class="market-stat-label">Proveedores conectados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVEEDORES (REDISEÑADO) -->
+  <section id="providers" class="providers-section">
+    <div class="container">
+      <div class="providers-intro">
+        <h2>¿Tenés una baulera o hacés mudanzas?</h2>
+        <p>Sumate a MudIT y conectá con miles de clientes que buscan servicios profesionales. Verificá tu CUIT/CUIL y empezá a recibir pedidos hoy mismo.</p>
+      </div>
+
+      <div class="providers-grid">
+        <div class="provider-type-card">
+          <div class="provider-icon">🏢</div>
+          <h3>Dueños de Bauleras</h3>
+          <p style="margin-bottom: 20px;">Ofrecé tus espacios de almacenamiento y gestioná todo desde un solo lugar.</p>
+          
+          <ul class="provider-benefits">
+            <li>✔️ Gestión online de reservas y pagos</li>
+            <li>✔️ Mayor visibilidad en búsquedas</li>
+            <li>✔️ Sistema de calificaciones y reputación</li>
+            <li>✔️ Soporte técnico dedicado</li>
+          </ul>
+          
+          <div class="provider-pricing">
+            <div class="price-range">USD 45 - 55</div>
+            <div class="price-description">Suscripción mensual según plan</div>
+          </div>
+          
+          <a href="#" class="btn-blue" onclick="openProviderModal('baulera'); return false;">Registrarme ahora</a>
+          <p style="font-size: 0.85rem; color: var(--gray); margin-top: 15px;">🎁 1 mes gratis para nuevos proveedores</p>
+        </div>
+
+        <div class="provider-type-card">
+          <div class="provider-icon">🚚</div>
+          <h3>Transportistas</h3>
+          <p style="margin-bottom: 20px;">Obtené más viajes, mejor reputación y pagos seguros automáticos.</p>
+          
+          <ul class="provider-benefits">
+            <li>✔️ Solo 4% de comisión por mudanza</li>
+            <li>✔️ Publicidad destacada en búsquedas</li>
+            <li>✔️ Pagos protegidos y automáticos</li>
+            <li>✔️ Fondo de contingencia incluido</li>
+          </ul>
+          
+          <div class="provider-pricing">
+            <div class="price-range">4% por viaje</div>
+            <div class="price-description">Comisión por transacción exitosa</div>
+          </div>
+          
+          <a href="#" class="btn-orange" onclick="openProviderModal('transporte'); return false;">Quiero unirme</a>
+          <p style="font-size: 0.85rem; color: var(--gray); margin-top: 15px;">🔥 3% de comisión los primeros 2 meses</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 50px; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+        <h4 style="color: var(--blue); margin-bottom: 15px;">Requisito obligatorio: Verificación de identidad</h4>
+        <p style="color: var(--gray); max-width: 700px; margin: 0 auto;">Todos los proveedores deben registrarse con su <strong>CUIT o CUIL</strong> válido. Esto garantiza la seguridad y confianza de nuestros usuarios. El proceso de verificación es simple y toma menos de 5 minutos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / SOBRE MUDIT (EL GUÍA) -->
+  <section id="about" class="section bg-white">
+    <div class="container">
+      <h3>Sobre MudIT</h3>
+      <p class="section-subtext">Somos la primera plataforma digital que transforma por completo la experiencia de mudanzas en Argentina. Combinamos tecnología avanzada, pagos seguros y proveedores verificados.</p>
+
+      <div class="values">
+        <div class="value">
+          <div class="value-icon">🤝</div>
+          <h4>Confianza</h4>
+          <p>Verificación de CUIT/CUIL, antecedentes y calificaciones que generan seguridad en cada operación.</p>
+        </div>
+
+        <div class="value">
+          <div class="value-icon">🔍</div>
+          <h4>Transparencia</h4>
+          <p>Presupuestos claros sin costos ocultos. Seguimiento en tiempo real de tu mudanza.</p>
+        </div>
+
+        <div class="value">
+          <div class="value-icon">⚙️</div>
+          <h4>Tecnología</h4>
+          <p>IA para estimaciones precisas y optimización logística. El futuro de las mudanzas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS / DATOS -->
+  <section id="metrics" class="section bg-light">
+    <div class="container">
+      <h3>Nuestra tracción</h3>
+      <p class="section-subtext">Números que respaldan nuestra propuesta</p>
+
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-number">+500</div>
+          <div class="metric-label">Mudanzas realizadas</div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-number">190</div>
+          <div class="metric-label">Proveedores verificados</div>
+        </div>
+
+        <div class="metric">
+          <div class="metric-number review">
+            <span class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#FFB400" width="22" height="22"><path d="M10 15.27l5.18 3.05-1.64-5.81L18 7.97l-6.09-.26L10 2 8.09 7.71 2 7.97l4.46 4.54-1.64 5.81z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#FFB400" width="22" height="22"><path d="M10 15.27l5.18 3.05-1.64-5.81L18 7.97l-6.09-.26L10 2 8.09 7.71 2 7.97l4.46 4.54-1.64 5.81z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#FFB400" width="22" height="22"><path d="M10 15.27l5.18 3.05-1.64-5.81L18 7.97l-6.09-.26L10 2 8.09 7.71 2 7.97l4.46 4.54-1.64 5.81z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#FFB400" width="22" height="22"><path d="M10 15.27l5.18 3.05-1.64-5.81L18 7.97l-6.09-.26L10 2 8.09 7.71 2 7.97l4.46 4.54-1.64 5.81z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#E0E0E0" width="22" height="22"><path d="M10 15.27l5.18 3.05-1.64-5.81L18 7.97l-6.09-.26L10 2 8.09 7.71 2 7.97l4.46 4.54-1.64 5.81z"/></svg>
+            </span>
+            <span class="rating-text">4.7 / 5</span>
+          </div>
+          <div class="metric-label">653 reseñas verificadas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS (TESTIMONIOS DEL GUÍA) -->
+  <section id="reviews" class="section bg-white">
+    <div class="container">
+      <h3>Lo que dicen nuestros clientes</h3>
+      <p class="section-subtext">Experiencias reales de personas que confiaron en MudIT</p>
+      
+      <div class="reviews">
+        <div class="review-card">
+          <p>"MudIT me salvó la mudanza. Todo fue rápido, seguro y sin estrés. El sistema de pago protegido me dio mucha tranquilidad."</p>
+          <span>— Camila, Palermo</span>
+        </div>
+        <div class="review-card">
+          <p>"Como transportista, MudIT me cambió el negocio. Ahora tengo viajes constantes y cobro de forma segura. La verificación con CUIT genera mucha confianza."</p>
+          <span>— Lucas, Belgrano</span>
+        </div>
+        <div class="review-card">
+          <p>"El mejor servicio de mudanzas online. Comparé precios en minutos y elegí el que más me convenía. 100% recomendado."</p>
+          <span>— María, Caballito</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD GENERATOR -->
+  <section id="lead-generator" class="lead-generator">
+    <div class="container">
+      <div class="lead-content">
+        <h3>Guía gratuita: 7 errores que debes evitar en tu mudanza</h3>
+        <p style="color: rgba(255,255,255,0.95); margin-bottom: 20px;">Descargá nuestra guía completa con consejos de expertos para que tu mudanza sea perfecta. Incluye checklist y tips de embalaje profesional.</p>
+        
+        <form class="lead-form" onsubmit="return handleLeadForm(event)">
+          <input type="email" placeholder="tu@correo.com" required aria-label="Correo electrónico">
+          <button type="submit">Descargar gratis</button>
+        </form>
+        
+        <p style="font-size: 0.85rem; margin-top: 15px; color: rgba(255,255,255,0.8);">🎁 Además, recibí un descuento exclusivo de USD 40 en tu primera mudanza</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section bg-light">
+    <div class="container">
+      <h3>Preguntas frecuentes</h3>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>¿Cómo se valida a los proveedores?</h4>
+          <p>Todos los proveedores deben registrarse con CUIT o CUIL válido. Realizamos controles de antecedentes, verificaciones de documentación y solicitamos referencias. Los transportistas deben presentar licencia profesional y seguros obligatorios.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Qué incluye el pago protegido?</h4>
+          <p>Retenemos el pago hasta que confirmes la entrega exitosa. Si algo sale mal, el dinero no se libera hasta resolver el problema. Esto protege tanto al cliente como al proveedor honesto.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Puedo cancelar una mudanza?</h4>
+          <p>Sí, tenemos políticas de cancelación flexibles. El plazo y condiciones dependen del tiempo de anticipación. Consultá nuestros términos completos al momento de la reserva.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Qué pasa si se rompe algo?</h4>
+          <p>Contamos con un fondo de contingencia de hasta USD 1.667 por incidente, además del seguro obligatorio del transportista. Requerimos documentación fotográfica antes y después del traslado.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Cómo funciona la estimación con IA?</h4>
+          <p>Subís fotos de los ambientes y nuestra tecnología 3D analiza el volumen y complejidad. Esto permite presupuestos más precisos y evita sorpresas en el precio final.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Cobran comisión a los clientes?</h4>
+          <p>No. Los clientes solo pagan el precio del servicio elegido. Nuestra comisión se cobra únicamente a los proveedores (4% para transportistas, suscripción para bauleras).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta" class="cta">
+    <div class="container">
+      <h3>La revolución de las mudanzas comienza con MudIT</h3>
+      <p>Unite a las +500 personas que ya mudaron de forma segura. Probá la plataforma hoy.</p>
+      <div class="cta-buttons">
+        <a href="#lead-generator" class="btn-orange large">Conseguir mi guía gratis</a>
+        <a href="mailto:info@mudit.com" class="btn-outline large">Contactar equipo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="./logo.png" alt="MudIT Logo" class="logo-small">
+        <span>© 2025 MudIT — Confianza que te acompaña</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:info@mudit.com">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE REGISTRO/LOGIN PROVEEDORES -->
+  <div id="providerModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProviderModal()">&times;</button>
+      
+      <div id="loginView">
+        <h3>Acceso para Proveedores</h3>
+        <p>Ingresá con tu CUIT/CUIL para acceder a tu cuenta</p>
+        
+        <form onsubmit="return handleProviderLogin(event)">
+          <div class="form-group">
+            <label for="loginCuit">CUIT / CUIL</label>
+            <input type="text" id="loginCuit" placeholder="20-12345678-9" required pattern="[0-9]{2}-[0-9]{8}-[0-9]{1}">
+            <small>Formato: XX-XXXXXXXX-X</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="loginPassword">Contraseña</label>
+            <input type="password" id="loginPassword" required>
+          </div>
+          
+          <button type="submit" class="btn-blue">Ingresar</button>
+        </form>
+        
+        <div class="switch-link">
+          ¿No tenés cuenta? <a href="#" onclick="showRegisterView(); return false;">Registrate acá</a>
+        </div>
+      </div>
+      
+      <div id="registerView" style="display: none;">
+        <h3>Registro de Proveedores</h3>
+        <p>Completá tus datos para empezar a ofrecer servicios</p>
+        
+        <form onsubmit="return handleProviderRegister(event)">
+          <div class="form-group">
+            <label for="serviceType">Tipo de servicio</label>
+            <select id="serviceType" required>
+              <option value="">Seleccioná una opción</option>
+              <option value="baulera">Baulera / Almacenamiento</option>
+              <option value="transporte">Transporte / Mudanzas</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="businessName">Nombre del negocio</label>
+            <input type="text" id="businessName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="registerCuit">CUIT / CUIL</label>
+            <input type="text" id="registerCuit" placeholder="20-12345678-9" required pattern="[0-9]{2}-[0-9]{8}-[0-9]{1}">
+            <small>Formato: XX-XXXXXXXX-X (será verificado)</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email de contacto</label>
+            <input type="email" id="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" placeholder="+54 11 1234-5678" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="registerPassword">Contraseña</label>
+            <input type="password" id="registerPassword" required minlength="6">
+            <small>Mínimo 6 caracteres</small>
+          </div>
+          
+          <button type="submit" class="btn-blue">Crear cuenta</button>
+        </form>
+        
+        <div class="switch-link">
+          ¿Ya tenés cuenta? <a href="#" onclick="showLoginView(); return false;">Iniciá sesión</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal functions
+    function openProviderModal(type) {
+      const modal = document.getElementById('providerModal');
+      modal.classList.add('active');
+      
+      if (type) {
+        showRegisterView();
+        document.getElementById('serviceType').value = type;
+      } else {
+        showLoginView();
+      }
+    }
+    
+    function closeProviderModal() {
+      const modal = document.getElementById('providerModal');
+      modal.classList.remove('active');
+    }
+    
+    function showLoginView() {
+      document.getElementById('loginView').style.display = 'block';
+      document.getElementById('registerView').style.display = 'none';
+    }
+    
+    function showRegisterView() {
+      document.getElementById('loginView').style.display = 'none';
+      document.getElementById('registerView').style.display = 'block';
+    }
+    
+    // Form handlers
+    function handleProviderLogin(event) {
+      event.preventDefault();
+      alert('Función de login en desarrollo. En producción, esto conectará con el backend para autenticar al proveedor.');
+      return false;
+    }
+    
+    function handleProviderRegister(event) {
+      event.preventDefault();
+      const serviceType = document.getElementById('serviceType').value;
+      const cuit = document.getElementById('registerCuit').value;
+      
+      alert(`Registro exitoso!\n\nTipo: ${serviceType}\nCUIT: ${cuit}\n\nEn producción, se enviará un email de verificación y se validará el CUIT con AFIP.`);
+      closeProviderModal();
+      return false;
+    }
+    
+    function handleLeadForm(event) {
+      event.preventDefault();
+      const email = event.target.querySelector('input[type="email"]').value;
+      alert(`¡Gracias! Enviamos la guía a ${email}\n\nTambién incluimos tu cupón de descuento de USD 40 para tu primera mudanza.`);
+      event.target.reset();
+      return false;
+    }
+    
+    // Close modal on outside click
+    window.onclick = function(event) {
+      const modal = document.getElementById('providerModal');
+      if (event.target === modal) {
+        closeProviderModal();
+      }
+    }
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && !this.hasAttribute('onclick')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
